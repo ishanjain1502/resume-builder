@@ -1,0 +1,119 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <title>
+        Resume
+    </title>
+</head>
+
+<body class="bg-orange-500 p-16">
+    <script> document.addEventListener('contextmenu', event => event.preventDefault());</script>
+
+    <div class="rounded-lg border-solid border-4 border-slate-500  p-4 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100"
+        id="main">
+        <br />
+        <h1 class="font-serif text-5xl font-semibold text-center">
+            <%= form.name.toUpperCase() %>
+        </h1>
+        <div class="text-center text-sm">
+            Email : <%= form.email %>
+                ||
+                Mobile Number : <%= form.mob %>
+        </div>
+        <br />
+        <hr />
+        <div>
+            <br /><br />
+            <div class="flex">
+                <div class="mx-16 text-xl font-medium">
+
+
+
+                    <!-- for Picture -->
+                    <div class="max-w-xs">
+                        <img class="object-cover"
+                            src="data:image/jpeg;base64,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" />
+                    </div>
+
+                    <div class="max-w-xs object-center">
+                        <img class="h-16"
+                            src="https://camo.githubusercontent.com/fcd5a5ab2be5419d00fcb803f14c55652cf60696d7f6d9828b99c1783d9f14a3/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f393837332f3236383034362f39636564333435342d386566632d313165322d383136652d6139623137306135313030342e706e67" />
+                    </div>
+
+                    <br /><br />
+                    Address : <br />
+                    <div class="max-w-xs text-base">
+                        <%= form.address %>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="font-sans text-2xl font-italic ">About Me :</div>
+                    <br />
+                    <div class="mb-8 max-w-5xl">
+                        <%= form.summary %>
+                    </div>
+                    <hr />
+                    <br />
+
+                    <!-- div for education -->
+                    <div>
+                        <h3 class="font-sans text-2xl font-italic "> Educational Qualifications : </h3>
+                        <br />
+                        <h4 class="font-sans text-xl font-italic mx-8">
+                            <%= form.edu1.toUpperCase() %>
+                        </h4>
+                        <div class="mx-8">
+                            <%= form.edu1Details %>
+                        </div>
+                        <br />
+                        <h4 class="font-sans text-xl font-italic mx-8">
+                            <%= form.edu2.toUpperCase() %>
+                        </h4>
+                        <div class="mx-8">
+                            <%= form.edu2Details %>
+                        </div>
+                    </div>
+                    <br /><br />
+                    <!-- div for skills -->
+
+                    <div>
+                        <h3 class="font-sans text-2xl font-italic  "> Skills </h3>
+                        <div class=" mx-8">
+                            <%= form.skills %>
+                        </div>
+                    </div>
+                    <br />
+
+                    <!-- div for projects -->
+                    <div class="my-8">
+                        <h3 class="font-sans text-2xl font-italic "> Projects / Experince : </h3>
+                        <br />
+                        <h4 class="font-sans text-xl font-italic mx-8">
+                            <%= form.project1.toUpperCase() %>
+                        </h4>
+                        <div class="mx-8">
+                            <%= form.project1Desc %>
+                        </div>
+                        <br />
+                        <h4 class="font-sans text-xl font-italic mx-8">
+                            <%= form.project2.toUpperCase() %>
+                        </h4>
+                        <div class="max-w-3xl mx-8">
+                            <%= form.project2Desc %>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <button onclick="window.print()">Print This Page</button>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <title>New Resume</title>
+</head>
+
+<body class="bg-orange-500 p-16">
+    <div
+        class="rounded-lg border-solid border-4 border-slate-500  p-4 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100">
+        <br />
+        <script> document.addEventListener('contextmenu', event => event.preventDefault());</script>
+        <h1 class="font-serif text-5xl font-semibold text-center">Create Your Resume</h1><br />
+        <form method="Post" action="/enteringData" autocomplete="off">
+            <div class="flex 1 1">
+                <div>
+                    <div class="p-8 m-4 border-solid border-2 border-sky-500 ">
+                        <h3 class="font-sans text-2xl font-italic text-center">Personal Information</h3>
+                        <div>
+                            <label class="" for="name">Name</label><br />
+                            <input onselectstart="return false" onpaste="return false;" onCopy="return false"
+                                onCut="return false" onDrag="return false" onDrop="return false"
+                                class="border-solid border-2 border-sky-500" type="text" id="name" name="form[name]"
+                                required autocomplete="off" style="text-transform:lowercase">
+                        </div><br />
+
+                        <div>
+                            <label class="" for="email">Email</label><br />
+                            <input class="border-solid border-2 border-sky-500" onselectstart="return false"
+                                onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false"
+                                onDrop="return false" type="email" id="email" name="form[email]" required
+                                autocomplete="off" style="text-transform:lowercase">
+                        </div><br />
+
+                        <div>
+                            <label class="" for="address">Address</label><br />
+                            <textarea cols="40" rows="3" class="border-solid border-2 border-sky-500" type="text"
+                                id="address" name="form[address]" required autocomplete="off"
+                                style="text-transform:lowercase"></textarea><br /><br />
+                        </div><br />
+
+                        <div>
+                            <label class="" for="age">Age</label><br />
+                            <input class="border-solid border-2 border-sky-500" type="date" id="age" name="form[age]"
+                                required autocomplete="off" onselectstart="return false" onpaste="return false;"
+                                onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false"
+                                style="text-transform:lowercase">
+                        </div><br />
+
+                        <div>
+                            <label class="" for="Summary">Summary</label><br />
+                            <textarea cols="40" rows="4" name="sumry" style="text-transform:lowercase"></textarea><br />
+                        </div><br />
+
+                        <div>
+                            <label class="" for="mob">Mobile Number</label><br />
+                            <input class="border-solid border-2 border-sky-500" onselectstart="return false"
+                                onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false"
+                                onDrop="return false" type="text" id="mob" name="form[mob]" required autocomplete="off"
+                                style="text-transform:lowercase">
+                        </div><br />
+
+                        <div>
+                            <label for="image">Upload your Image</label><br />
+                            <input type="file" name="image" /><br />
+                        </div>
+                        <br />
+                        <div>
+                            <label for="sign">Upload your Signature</label><br />
+                            <input type="file" name="sign" /><br />
+                        </div>
+
+
+                    </div>
+                </div>
+                <div>
+                    <div class="p-8 m-4 border-solid border-2 border-sky-500 max-w-min">
+                        <h3 class=" font-sans text-2xl font-italic text-center">Educational Details</h3>
+                        <div>
+                            <label class="" for="edu1">Educational Details 1</label><br />
+                            <input class="border-solid border-2 border-sky-500" type="text" id="text" name="form[edu1]"
+                                required autocomplete="off" onselectstart="return false" onpaste="return false;"
+                                onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false"
+                                style="text-transform:lowercase"><br />
+                            <textarea cols="40" rows="3" class="border-solid border-2 border-sky-500" type="text"
+                                id="address" name="form[edu1Details]" required autocomplete="off"
+                                style="text-transform:lowercase"></textarea><br /><br />
+                        </div>
+
+                        <div>
+                            <label class="" for="edu2">Educational Details 2</label><br />
+                            <input class="border-solid border-2 border-sky-500" type="text" id="text" name="form[edu2]"
+                                required autocomplete="off" onselectstart="return false" onpaste="return false;"
+                                onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false"
+                                style="text-transform:lowercase"><br />
+                            <textarea cols="40" rows="3" class="border-solid border-2 border-sky-500" type="text"
+                                id="address" name="form[edu2Details]" required autocomplete="off"
+                                style="text-transform:lowercase"></textarea><br /><br />
+                        </div>
+
+                        <div>
+                            <label for="skills">Skills</label><br />
+                            <input class="border-solid border-2 border-sky-500 min-w-fit" type="text" id="skills"
+                                name="form[skills]" required autocomplete="off" onselectstart="return false"
+                                onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false"
+                                onDrop="return false" style="text-transform:lowercase">
+                        </div>
+
+                    </div>
+
+                </div>
+                <div>
+                    <div class="p-8 m-4 border-solid border-2 border-sky-500 max-w-min max-h-min">
+                        <h3 class=" font-sans text-2xl font-italic text-center">Projects</h3>
+
+                        <div>
+                            <label for="project1">Project 1</label><br />
+                            <input class="border-solid border-2 border-sky-500 min-w-fit" type="text" id="project1"
+                                name="form[project1]" autocomplete="off" onselectstart="return false"
+                                onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false"
+                                onDrop="return false" style="text-transform:lowercase">
+                            <textarea class="border-solid border-2 border-sky-500 min-w-fit" type="text" cols="40"
+                                rows="3" id="project1Desc" name="form[project1Desc]" autocomplete="off"
+                                style="text-transform:lowercase"></textarea>
+                        </div><br /><br />
+
+                        <div>
+                            <label for="project2">Project 2</label><br />
+                            <input class="border-solid border-2 border-sky-500 min-w-fit" type="text" id="project2"
+                                name="form[project2]" autocomplete="off" onselectstart="return false"
+                                onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false"
+                                onDrop="return false" style="text-transform:lowercase">
+                            <textarea class="border-solid border-2 border-sky-500 min-w-fit" type="text" cols="40"
+                                rows="3" id="project2Desc" name="form[project2Desc]" autocomplete="off"
+                                style="text-transform:lowercase"></textarea>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flex-stretch">
+                <button class="self-stretch border-solid border-2 border-sky-500 bg-red-500 p-4 m-auto"
+                    type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
